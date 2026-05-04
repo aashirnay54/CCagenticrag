@@ -8,3 +8,7 @@ pydantic
 pydantic-settings
 httpx
 python-multipart
+pypdf
+google-api-python-client
+google-auth-oauthlib
+apscheduler

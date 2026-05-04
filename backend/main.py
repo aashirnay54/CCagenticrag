@@ -3,7 +3,7 @@ load_dotenv()
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import threads, chat
+from routers import threads, chat, documents
 
 app = FastAPI()
 
@@ -23,3 +23,4 @@ def health():
 
 app.include_router(threads.router)
 app.include_router(chat.router)
+app.include_router(documents.router)
